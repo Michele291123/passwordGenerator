@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <header>
+        <h1>THE ULTIMATE PASSWORD GENERATOR</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Password length (8 to 16)</h3>
+            <div class="form-group">
+                <input type="number" min="8" max="16" id="pwl" value="12" />
+                <button id="lns-btn" onclick="generaPasswordLunghezza()">GENERATE</button>
+            </div>
+            <div class="password-section">
+                <p id="password-generated"></p>
+                <button id="copy-btn" onclick="copiaPassword()">COPY</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
